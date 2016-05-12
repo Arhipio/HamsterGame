@@ -18,6 +18,6 @@ public class PlayerName : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		ballPosition = GameObject.Find ("HamsterBall").transform.position;
-		text.transform.position = ballPosition + new Vector3(0.5f,0.7f,0.7f);
+		text.transform.position = ballPosition + new Vector3(0.8f,0.7f,0.7f);
 	}
 }
