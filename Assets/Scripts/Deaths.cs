@@ -2,18 +2,9 @@
 using System.Collections;
 
 public class Deaths : MonoBehaviour {
+	private string tag;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
-	void onTriggerEnter(){
-
+	void OnTriggerEnter(Collider other) {
+		Destroy(other.gameObject);
 	}
 }
