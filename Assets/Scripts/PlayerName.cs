@@ -5,7 +5,6 @@ using System.Collections;
 public class PlayerName : MonoBehaviour {
 
 	private GameObject text;
-	private GameObject camera;
 	private Text name;
 	
 	public string playerName;
@@ -20,6 +19,6 @@ public class PlayerName : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		ballPosition = GameObject.Find (playerName + "HamsterBall").transform.position;
-		text.transform.position = ballPosition + new Vector3(2.6f,0.5f,0.5f);
+		text.transform.position = ballPosition + new Vector3(0.5f,0.5f,0.5f);
 	}
 }
