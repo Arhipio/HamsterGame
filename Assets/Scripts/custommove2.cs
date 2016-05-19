@@ -1,7 +1,7 @@
-using UnityEngine;
+﻿using UnityEngine;
 namespace UnityStandardAssets.Vehicles.Ball	
 {
-	public class custommove3 : MonoBehaviour 
+	public class custommove2 : MonoBehaviour 
 	{
 		[SerializeField] private float m_MovePower = 5;
 		private inputstate2 inputState2;
@@ -16,19 +16,19 @@ namespace UnityStandardAssets.Vehicles.Ball
 		
 		// Update is called once per frame
 		void Update () {
-			if (inputState2.left2) {
+			if (inputState2.down3) {
 				m_Rigidbody.AddTorque(new Vector3(-30000000, 0, 0)*m_MovePower);
 			} 
-			if (inputState2.right2) {
+			if (inputState2.up3) {
 				
 				
 				m_Rigidbody.AddTorque(new Vector3(30000000, 0, 0)*m_MovePower);
 			} 
-			if (inputState2.up2) {
+			if (inputState2.left3) {
 				m_Rigidbody.AddTorque(new Vector3(0, 0,30000000 )*m_MovePower);
 				
 			} 
-			if (inputState2.down2) {
+			if (inputState2.right3) {
 				m_Rigidbody.AddTorque(new Vector3(0, 0, -30000000)*m_MovePower);
 			} 
 		}

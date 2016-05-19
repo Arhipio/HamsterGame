@@ -16,19 +16,17 @@ namespace UnityStandardAssets.Vehicles.Ball
 	
 	// Update is called once per frame
 	void Update () {
-		if (inputState2.left) {
+		if (inputState2.down) {
 				m_Rigidbody.AddTorque(new Vector3(-30000000, 0, 0)*m_MovePower);
 		} 
-		if (inputState2.right) {
-			
-			
+		if (inputState2.up) {
 				m_Rigidbody.AddTorque(new Vector3(30000000, 0, 0)*m_MovePower);
 		} 
-		if (inputState2.up) {
+		if (inputState2.left) {
 				m_Rigidbody.AddTorque(new Vector3(0, 0,30000000 )*m_MovePower);
 			
 		} 
-		if (inputState2.down) {
+		if (inputState2.right) {
 				m_Rigidbody.AddTorque(new Vector3(0, 0, -30000000)*m_MovePower);
 		} 
 	}

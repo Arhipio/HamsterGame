@@ -24,7 +24,6 @@ public class Collision : MonoBehaviour {
 			ovy = other.GetComponent<Rigidbody> ().velocity.y;
 			ovz = other.GetComponent<Rigidbody> ().velocity.z;
 			this.GetComponent<Rigidbody> ().velocity = new Vector3 (ovx*collisionforce, 0, ovz*collisionforce);
-			worked=true;
 		}
 		else if ((other.GetComponent<Name> ().name.Equals ("Player2")||other.GetComponent<Name> ().name.Equals ("Player3")||other.GetComponent<Name> ().name.Equals ("Player4"))&&timer>15) {
 			ovx = other.GetComponent<Rigidbody> ().velocity.x;
@@ -33,7 +32,7 @@ public class Collision : MonoBehaviour {
 			other.GetComponent<Rigidbody> ().velocity = new Vector3 (body.velocity.x*collisionforce,0, body.velocity.z*collisionforce);
 			this.GetComponent<Rigidbody> ().velocity = new Vector3 (ovx*collisionforce, 0, ovz*collisionforce);
 			timer=0;
-
+			worked=true;
 
 		}
 	}
