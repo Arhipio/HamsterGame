@@ -29,18 +29,18 @@ public class inputstate2 : MonoBehaviour
 		left= Input.GetKey(KeyCode.A);
 		down = Input.GetKey(KeyCode.S);
 		jump = Input.GetKey(KeyCode.Space);
-		up1 = Input.GetKey (KeyCode.UpArrow);
-		right1 = Input.GetKey(KeyCode.RightArrow);
-		left1= Input.GetKey(KeyCode.LeftArrow);
-		down1 = Input.GetKey(KeyCode.DownArrow);
-		up2 = Input.GetKey (KeyCode.I);
-		right2 = Input.GetKey(KeyCode.L);
-		left2= Input.GetKey(KeyCode.J);
-		down2 = Input.GetKey(KeyCode.K);
-		up3 = Input.GetKey (KeyCode.Keypad8);
-		right3 = Input.GetKey(KeyCode.Keypad6);
-		left3= Input.GetKey(KeyCode.Keypad4);
-		down3 = Input.GetKey(KeyCode.Keypad5);
+		up1 = Input.GetKey (KeyCode.I);
+		right1 = Input.GetKey(KeyCode.L);
+		left1= Input.GetKey(KeyCode.J);
+		down1 = Input.GetKey(KeyCode.K);
+		up2 = Input.GetKey (KeyCode.Keypad8);
+		right2 = Input.GetKey(KeyCode.Keypad6);
+		left2= Input.GetKey(KeyCode.Keypad4);
+		down2 = Input.GetKey(KeyCode.Keypad5);
+		up3 = Input.GetKey (KeyCode.UpArrow);
+		right3 = Input.GetKey(KeyCode.RightArrow);
+		left3= Input.GetKey(KeyCode.LeftArrow);
+		down3 = Input.GetKey(KeyCode.DownArrow);
 
 	}
 	
